@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — MYNUTRITION | Fuel Your Body. Build Your Best.</title>
+  <meta name="description" content="Discover the story, mission, and philosophy behind MYNUTRITION. Clean, delicious, everyday protein nutrition created for Gen Z and active young adults.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN with Curated Gen-Z Wellness Theme Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cream: {
+              DEFAULT: '#FAF8F5',
+              50: '#FFFFFF',
+              100: '#FAF8F5',
+              200: '#F3EFE9',
+              300: '#EAE4DC',
+            },
+            beige: {
+              DEFAULT: '#F4EFEA',
+              light: '#F8F4EE',
+              dark: '#E8DFC8',
+            },
+            sage: {
+              50: '#F5F9F4',
+              100: '#EAF2E8',
+              200: '#D7E5D3',
+              500: '#52795D',
+              600: '#3D5A45',
+              700: '#2C4232',
+              deep: '#233729',
+            },
+            charcoal: {
+              DEFAULT: '#191C1B',
+              heading: '#151817',
+              body: '#4A524D',
+              muted: '#7A847E',
+              border: '#E5E1D8',
+            },
+            terracotta: {
+              DEFAULT: '#D96B43',
+              50: '#FDF4F0',
+              100: '#FBE8E0',
+              500: '#D96B43',
+              600: '#C25730',
+              glow: 'rgba(217, 107, 67, 0.20)',
+            }
+          },
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+          borderRadius: {
+            'card': '24px',
+            'card-lg': '32px',
+          },
+          boxShadow: {
+            'soft': '0 4px 20px -4px rgba(25, 28, 27, 0.04), 0 2px 6px -1px rgba(25, 28, 27, 0.02)',
+            'card': '0 16px 40px -12px rgba(25, 28, 27, 0.06), 0 4px 12px -2px rgba(25, 28, 27, 0.02)',
+            'hover': '0 24px 48px -12px rgba(44, 66, 50, 0.12), 0 8px 24px -4px rgba(217, 107, 67, 0.08)',
+            'drawer': '-16px 0 60px rgba(25, 28, 27, 0.16)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @keyframes gentleFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-gentle-float {
+      animation: gentleFloat 5s ease-in-out infinite;
+    }
+    .touch-target {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-cream text-charcoal font-sans antialiased selection:bg-sage-200 selection:text-sage-deep overflow-x-hidden">
+
+  <!-- ========================================================================= -->
+  <!-- TOP ANNOUNCEMENT TICKER -->
+  <!-- ========================================================================= -->
+  <aside aria-label="Announcement" class="bg-sage-deep text-cream text-xs font-medium py-2.5 px-4 relative z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="hidden sm:flex items-center gap-2 text-cream/75">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Everyday Nutrition for Gen Z & Young Adults</span>
+      </div>
+      <div class="flex-1 text-center font-medium tracking-wide text-xs">
+        <span>✨ Free Express Delivery on orders over <span class="text-terracotta-100 font-bold">[PRICE]</span> • Code: <strong class="bg-white/10 px-2 py-0.5 rounded tracking-widest text-white">EVERYDAY10</strong></span>
+      </div>
+      <div class="hidden md:flex items-center gap-3 text-cream/75 text-xs">
+        <span class="flex items-center gap-1">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-sage-200"></i>
+          <span>[LAB TEST RESULTS] Verified</span>
+        </span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- STICKY HEADER -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-charcoal-border/70 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-600 rounded-xl p-1">
+          <div class="w-9 h-9 rounded-xl bg-sage-600 text-cream flex items-center justify-center font-display font-extrabold text-lg shadow-sm group-hover:bg-terracotta transition-colors duration-300">
+            M
+          </div>
+          <span class="font-display font-extrabold text-2xl tracking-tight text-charcoal">
+            MYNUTRITION<span class="text-terracotta">.</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm text-charcoal-body">
+          <a href="index.html#hero" class="hover:text-sage-600 transition-colors py-2">Home</a>
+          <a href="about.html" class="text-sage-700 font-bold border-b-2 border-sage-600 py-2">About Us</a>
+          <a href="index.html#why-us" class="hover:text-sage-600 transition-colors py-2">Why MYNUTRITION</a>
+          <a href="index.html#product" class="hover:text-sage-600 transition-colors py-2">Featured Protein</a>
+          <a href="index.html#protein-matters" class="hover:text-sage-600 transition-colors py-2">Why Protein Matters</a>
+          <a href="index.html#fits-your-day" class="hover:text-sage-600 transition-colors py-2">How It Fits Your Day</a>
+          <a href="index.html#reviews" class="hover:text-sage-600 transition-colors py-2">Reviews</a>
+          <a href="index.html#faq" class="hover:text-sage-600 transition-colors py-2">FAQ</a>
+        </nav>
+
+        <!-- Right Side Header Controls -->
+        <div class="flex items-center space-x-3 sm:space-x-4">
+          <!-- Primary CTA Button in Header -->
+          <a href="index.html#product" class="hidden sm:inline-flex items-center justify-center font-display font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full bg-sage-600 text-white hover:bg-sage-700 transition-all shadow-sm active:scale-95 touch-target">
+            Shop Protein
+          </a>
+
+          <!-- Cart Drawer Trigger Button -->
+          <button id="cart-drawer-trigger" type="button" aria-label="Open Cart Bag" class="relative p-2.5 rounded-full text-charcoal hover:bg-beige transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-600 touch-target flex items-center justify-center">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+            <span id="cart-badge-count" class="absolute -top-1 -right-1 bg-terracotta text-white font-bold text-[11px] w-5 h-5 rounded-full flex items-center justify-center border-2 border-cream">
+              0
+            </span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-trigger" type="button" aria-label="Toggle Navigation Menu" class="lg:hidden p-2.5 rounded-full text-charcoal hover:bg-beige transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-600 touch-target flex items-center justify-center">
+            <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+            <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav-panel" class="hidden lg:hidden bg-cream border-b border-charcoal-border px-6 py-6 space-y-4">
+      <nav class="flex flex-col space-y-3 font-medium text-base text-charcoal">
+        <a href="index.html" class="mobile-nav-link py-2 border-b border-charcoal-border/50">Home</a>
+        <a href="about.html" class="mobile-nav-link py-2 border-b border-charcoal-border/50 text-sage-700 font-bold">About Us (Our Story)</a>
+        <a href="index.html#why-us" class="mobile-nav-link py-2 border-b border-charcoal-border/50">Why MYNUTRITION</a>
+        <a href="index.html#product" class="mobile-nav-link py-2 border-b border-charcoal-border/50">Featured Protein</a>
+        <a href="index.html#protein-matters" class="mobile-nav-link py-2 border-b border-charcoal-border/50">Why Protein Matters</a>
+        <a href="index.html#fits-your-day" class="mobile-nav-link py-2 border-b border-charcoal-border/50">How It Fits Your Day</a>
+        <a href="index.html#reviews" class="mobile-nav-link py-2 border-b border-charcoal-border/50">Reviews</a>
+        <a href="index.html#faq" class="mobile-nav-link py-2">FAQ</a>
+      </nav>
+      <div class="pt-2">
+        <a href="index.html#product" class="mobile-nav-link w-full inline-flex items-center justify-center font-display font-bold text-sm uppercase tracking-wider py-3.5 rounded-full bg-sage-600 text-white hover:bg-sage-700 transition-colors shadow-soft">
+          Shop Protein
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- HERO / ABOUT INTRODUCTION -->
+  <!-- ========================================================================= -->
+  <section class="relative pt-14 pb-20 md:pt-24 md:pb-32 overflow-hidden bg-gradient-to-b from-cream via-cream to-sage-50">
+    <!-- Ambient Backdrop Gradients -->
+    <div class="absolute top-12 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-sage-200/35 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute bottom-4 right-10 w-[350px] h-[350px] bg-terracotta-100/40 rounded-full blur-2xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      
+      <!-- Eyebrow Pill -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sage-100 border border-sage-200 text-sage-700 text-xs font-semibold uppercase tracking-wider">
+        <span class="w-2 h-2 rounded-full bg-sage-600 animate-ping"></span>
+        <span>About MYNUTRITION • A New Standard in Daily Nutrition</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-charcoal tracking-tight leading-[1.1]">
+        Everyday Nutrition Made <br class="hidden sm:inline">
+        <span class="text-sage-600">Simple, Enjoyable & Honest.</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-charcoal-body text-lg sm:text-xl max-w-2xl mx-auto font-normal leading-relaxed">
+        We are redesigning protein for the next generation. No aggressive gym-bro marketing, no heavy digestive bloat, and no artificial chalkiness—just pure, crave-worthy nutrition built for real lives.
+      </p>
+
+      <!-- Trust Badges Under Hero -->
+      <div class="pt-6 flex flex-wrap items-center justify-center gap-6 text-xs text-charcoal-muted">
+        <div class="flex items-center gap-2 bg-white px-3.5 py-1.5 rounded-full border border-charcoal-border shadow-soft">
+          <i data-lucide="check" class="w-4 h-4 text-sage-600"></i>
+          <span class="font-semibold text-charcoal">Clean [INGREDIENTS]</span>
+        </div>
+        <div class="flex items-center gap-2 bg-white px-3.5 py-1.5 rounded-full border border-charcoal-border shadow-soft">
+          <i data-lucide="check" class="w-4 h-4 text-sage-600"></i>
+          <span class="font-semibold text-charcoal">Zero Digestive Bloat</span>
+        </div>
+        <div class="flex items-center gap-2 bg-white px-3.5 py-1.5 rounded-full border border-charcoal-border shadow-soft">
+          <i data-lucide="check" class="w-4 h-4 text-sage-600"></i>
+          <span class="font-semibold text-charcoal">Independent [LAB TEST RESULTS]</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 1. OUR STORY -->
+  <!-- ========================================================================= -->
+  <section id="our-story" class="py-20 md:py-28 bg-white border-y border-charcoal-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Visual Narrative Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="bg-cream rounded-card-lg p-8 sm:p-10 border border-charcoal-border shadow-card relative overflow-hidden space-y-6">
+            <div class="w-14 h-14 rounded-2xl bg-sage-600 text-cream flex items-center justify-center shadow-soft">
+              <i data-lucide="compass" class="w-7 h-7"></i>
+            </div>
+
+            <div class="space-y-3">
+              <span class="text-xs font-bold uppercase tracking-widest text-sage-700 bg-sage-100 px-3 py-1 rounded-full">
+                Born Out of Frustration
+              </span>
+              <h3 class="font-display font-extrabold text-2xl text-charcoal">
+                The Problem with Traditional Protein
+              </h3>
+              <p class="text-sm text-charcoal-body leading-relaxed">
+                For years, walking down the supplement aisle felt like stepping into an intimidating subculture: oversized black plastic tubs, aggressive lightning graphics, chemical ingredient profiles, and shakes that tasted like chalk.
+              </p>
+            </div>
+
+            <!-- Legacy vs MYNUTRITION Comparison Card -->
+            <div class="p-4 rounded-xl bg-white border border-charcoal-border space-y-2 text-xs">
+              <div class="flex items-center justify-between text-charcoal-muted pb-1.5 border-b border-charcoal-border/50">
+                <span>Traditional Powders:</span>
+                <span class="text-red-500 font-semibold">Chalky, Heavy Bloat, Intimidating</span>
+              </div>
+              <div class="flex items-center justify-between text-charcoal pt-1 font-medium">
+                <span class="text-sage-700 font-bold">MYNUTRITION:</span>
+                <span class="text-sage-700 font-bold">Light, Dessert-Smooth, Everyday</span>
+              </div>
+            </div>
+
+            <div class="pt-2 flex items-center gap-3 text-xs text-charcoal-muted">
+              <i data-lucide="sparkles" class="w-4 h-4 text-terracotta flex-shrink-0"></i>
+              <span>Created for students, beginners, lifters, and everyday active people.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Story Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-sage-700 bg-sage-100 px-3.5 py-1 rounded-full border border-sage-200">
+            Our Story
+          </span>
+
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-charcoal tracking-tight leading-tight">
+            “MYNUTRITION was created with one simple idea — <span class="text-sage-600">better nutrition should fit effortlessly into everyday life.”</span>
+          </h2>
+
+          <div class="space-y-4 text-charcoal-body text-base leading-relaxed">
+            <p>
+              We looked around and noticed a glaring disconnect. Today’s young adults—whether balancing college lectures, launching startups, working creative desks, or hitting morning yoga and gym sessions—care deeply about their health, energy, and physical well-being.
+            </p>
+            <p>
+              Yet, reaching the daily recommended protein intake remained needlessly difficult. Most products on the market were either overly commercialized bodybuilding formulas packed with excessive lactose and sweeteners that caused digestive bloat, or overpriced niche health foods that tasted bland.
+            </p>
+            <p>
+              We asked ourselves: <em>What if protein powder was crafted like your favorite premium café drink?</em> What if it dissolved instantly in cold water without needing an electric blender, tasted genuinely crave-worthy, felt completely light on the stomach, and sat proudly on your kitchen countertop?
+            </p>
+            <p class="font-medium text-charcoal">
+              That simple conviction gave birth to MYNUTRITION: a modern, transparent brand dedicated to making high-quality protein a joyful, natural part of your daily routine.
+            </p>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <div class="flex items-center gap-2 text-xs font-semibold text-charcoal bg-beige px-4 py-2.5 rounded-full border border-charcoal-border">
+              <i data-lucide="check-circle" class="w-4 h-4 text-sage-600"></i>
+              <span>No Extreme Dogma</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-charcoal bg-beige px-4 py-2.5 rounded-full border border-charcoal-border">
+              <i data-lucide="check-circle" class="w-4 h-4 text-sage-600"></i>
+              <span>Honest Quality First</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-charcoal bg-beige px-4 py-2.5 rounded-full border border-charcoal-border">
+              <i data-lucide="check-circle" class="w-4 h-4 text-sage-600"></i>
+              <span>Clean Everyday Habits</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 2. OUR MISSION -->
+  <!-- ========================================================================= -->
+  <section id="our-mission" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Mission Headline Card -->
+      <div class="bg-sage-deep rounded-card-lg p-10 sm:p-14 lg:p-16 text-center text-cream relative shadow-card overflow-hidden">
+        <!-- Ambient Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-sage-500/25 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-3xl mx-auto space-y-6 relative z-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-terracotta-100 bg-white/10 px-4 py-1.5 rounded-full border border-white/10 inline-block">
+            Our Mission
+          </span>
+
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
+            “To make protein and everyday nutrition simple, enjoyable and accessible for the next generation.”
+          </h2>
+
+          <p class="text-cream/80 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+            We exist to help you build sustainable, empowering nutrition habits you look forward to every single day—without confusion, compromise, or intimidation.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 Mission Pillars -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mt-12">
+        
+        <!-- Pillar 1 -->
+        <div class="bg-white rounded-card p-8 border border-charcoal-border hover:border-sage-300 hover:shadow-card transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-cream text-sage-600 flex items-center justify-center shadow-soft mb-6">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2">
+            Nutrition Without Ego
+          </h3>
+          <p class="text-charcoal-body text-sm leading-relaxed">
+            You do not need to be a competitive athlete or heavy powerlifter to deserve high-grade nutrition. We build products for everyone—from first-time gym beginners to desk workers and students.
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-white rounded-card p-8 border border-charcoal-border hover:border-sage-300 hover:shadow-card transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-cream text-sage-600 flex items-center justify-center shadow-soft mb-6">
+            <i data-lucide="sparkles" class="w-6 h-6 text-terracotta"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2">
+            Flavor That Delights
+          </h3>
+          <p class="text-charcoal-body text-sm leading-relaxed">
+            Good health should never feel like a punishment. If your daily protein shake does not taste like a delicious iced latte or gourmet chocolate milkshake, it is hard to make it a lasting habit.
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-white rounded-card p-8 border border-charcoal-border hover:border-sage-300 hover:shadow-card transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-cream text-sage-600 flex items-center justify-center shadow-soft mb-6">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2">
+            Uncompromised Quality
+          </h3>
+          <p class="text-charcoal-body text-sm leading-relaxed">
+            Clean micro-filtered isolates, digestive enzymes, verified batch testing, and certified facilities. We hold ourselves to uncompromising transparency so you consume every scoop with confidence.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. WHY MYNUTRITION? (The 6 Brand Pillars) -->
+  <!-- ========================================================================= -->
+  <section id="why-mynutrition" class="py-20 md:py-28 bg-white border-y border-charcoal-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-sage-700 bg-sage-100 px-3.5 py-1 rounded-full border border-sage-200">
+          The 6 Brand Pillars
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-charcoal tracking-tight">
+          Why MYNUTRITION?
+        </h2>
+        <p class="text-charcoal-body text-base sm:text-lg">
+          Crafted to solve the real everyday needs of modern, health-conscious young adults.
+        </p>
+      </div>
+
+      <!-- 6 Pillars Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Pillar 1: Quality-Focused Protein -->
+        <div class="bg-cream rounded-card p-8 border border-charcoal-border hover:border-sage-300 hover:shadow-card transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-white text-sage-600 flex items-center justify-center shadow-soft mb-6 group-hover:bg-sage-600 group-hover:text-white transition-colors">
+            <i data-lucide="award" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2.5">
+            Quality-Focused Protein
+          </h3>
+          <p class="text-charcoal-body text-sm leading-relaxed mb-4">
+            Formulated with micro-filtered protein isolate delivering a full <strong class="text-charcoal font-semibold">[PROTEIN PER SERVING]</strong> with all essential amino acids (EAAs and BCAAs) for lean muscle tone and cellular vitality.
+          </p>
+          <span class="text-xs font-semibold text-sage-600 flex items-center gap-1">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i> High Bioavailability
+          </span>
+        </div>
+
+        <!-- Pillar 2: Great Taste -->
+        <div class="bg-cream rounded-card p-8 border border-charcoal-border hover:border-sage-300 hover:shadow-card transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-white text-sage-600 flex items-center justify-center shadow-soft mb-6 group-hover:bg-sage-600 group-hover:text-white transition-colors">
+            <i data-lucide="smile" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2.5">
+            Great Taste
+          </h3>
+          <p class="text-charcoal-body text-sm leading-relaxed mb-4">
+            Gourmet natural flavor profiles—rich Chocolate [FLAVOUR], aromatic Coffee [FLAVOUR], and creamy Vanilla [FLAVOUR]. No synthetic bitter undertone, no artificial chemical lingering.
+          </p>
+          <span class="text-xs font-semibold text-sage-600 flex items-center gap-1">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i> Truly Crave-Worthy
+          </span>
+        </div>
+
+        <!-- Pillar 3: Simple Everyday Nutrition -->
+        <div class="bg-cream rounded-card p-8 border border-charcoal-border hover:border-sage-300 hover:shadow-card transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-white text-sage-600 flex items-center justify-center shadow-soft mb-6 group-hover:bg-sage-600 group-hover:text-white transition-colors">
+            <i data-lucide="leaf" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2.5">
+            Simple Everyday Nutrition
+          </h3>
+          <p class="text-charcoal-body text-sm leading-relaxed mb-4">
+            Zero complex gimmicks, zero excess added sugar, and fortified with digestive enzymes to eliminate the bloated, heavy stomach sensations associated with inferior powders.
+          </p>
+          <span class="text-xs font-semibold text-sage-600 flex items-center gap-1">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i> Zero Bloat Formula
+          </span>
+        </div>
+
+        <!-- Pillar 4: Modern Lifestyle Friendly -->
+        <div class="bg-cream rounded-card p-8 border border-charcoal-border hover:border-sage-300 hover:shadow-card transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-white text-sage-600 flex items-center justify-center shadow-soft mb-6 group-hover:bg-sage-600 group-hover:text-white transition-colors">
+            <i data-lucide="home" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2.5">
+            Modern Lifestyle Friendly
+          </h3>
+          <p class="text-charcoal-body text-sm leading-relaxed mb-4">
+            Minimalist, aesthetic matte packaging that looks beautiful on open kitchen shelves, dorm rooms, or office countertops—not hidden away in shame.
+          </p>
+          <span class="text-xs font-semibold text-sage-600 flex items-center gap-1">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i> Clean Gen-Z Aesthetic
+          </span>
+        </div>
+
+        <!-- Pillar 5: Designed for Active People -->
+        <div class="bg-cream rounded-card p-8 border border-charcoal-border hover:border-sage-300 hover:shadow-card transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-white text-sage-600 flex items-center justify-center shadow-soft mb-6 group-hover:bg-sage-600 group-hover:text-white transition-colors">
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2.5">
+            Designed for Active People
+          </h3>
+          <p class="text-charcoal-body text-sm leading-relaxed mb-4">
+            Whether you are training for a 10K run, lifting weights, practicing Pilates, or simply walking 10,000 steps around campus, our protein repairs your muscles and keeps you fueled.
+          </p>
+          <span class="text-xs font-semibold text-sage-600 flex items-center gap-1">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i> Universal Fit
+          </span>
+        </div>
+
+        <!-- Pillar 6: Convenient & Easy to Use -->
+        <div class="bg-cream rounded-card p-8 border border-charcoal-border hover:border-sage-300 hover:shadow-card transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-white text-sage-600 flex items-center justify-center shadow-soft mb-6 group-hover:bg-sage-600 group-hover:text-white transition-colors">
+            <i data-lucide="zap" class="w-6 h-6 text-terracotta"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2.5">
+            Convenient & Easy to Use
+          </h3>
+          <p class="text-charcoal-body text-sm leading-relaxed mb-4">
+            Instantized dissolve technology. Shake for 15 seconds in cold water or milk, or stir cleanly into your morning oats with a regular spoon—no sticky shaker balls or clumpy mess.
+          </p>
+          <span class="text-xs font-semibold text-sage-600 flex items-center gap-1">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i> Mixes in 15 Seconds
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. OUR PROMISE (Transparency, Quality & Trust) -->
+  <!-- ========================================================================= -->
+  <section id="our-promise" class="py-20 md:py-28 bg-sage-deep text-cream relative overflow-hidden">
+    <!-- Ambient Glow Accent -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-sage-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center space-y-4 mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-terracotta-100 bg-white/10 px-4 py-1.5 rounded-full border border-white/10 inline-block">
+          Our Guarantee
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight leading-tight">
+          Our Promise to You
+        </h2>
+        <p class="text-cream/80 text-base sm:text-lg max-w-xl mx-auto">
+          Honest formulas you can trust every single morning. We never cut corners.
+        </p>
+      </div>
+
+      <!-- 4 Promise Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Promise 1 -->
+        <div class="p-6 rounded-card bg-white/5 border border-white/10 backdrop-blur-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-white/10 text-emerald-300 flex items-center justify-center">
+            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">
+            100% Clean [INGREDIENTS]
+          </h4>
+          <p class="text-cream/70 text-xs sm:text-sm leading-relaxed">
+            Zero amino-spiking, no hidden fillers, and no artificial coloring agents. Only genuine, bioavailable protein isolate.
+          </p>
+        </div>
+
+        <!-- Promise 2 -->
+        <div class="p-6 rounded-card bg-white/5 border border-white/10 backdrop-blur-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-white/10 text-emerald-300 flex items-center justify-center">
+            <i data-lucide="file-check-2" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">
+            [LAB TEST RESULTS]
+          </h4>
+          <p class="text-cream/70 text-xs sm:text-sm leading-relaxed">
+            Every batch undergoes independent third-party laboratory verification for heavy metals, purity, and exact protein potency.
+          </p>
+        </div>
+
+        <!-- Promise 3 -->
+        <div class="p-6 rounded-card bg-white/5 border border-white/10 backdrop-blur-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-white/10 text-emerald-300 flex items-center justify-center">
+            <i data-lucide="badge-check" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">
+            Certified [CERTIFICATIONS]
+          </h4>
+          <p class="text-cream/70 text-xs sm:text-sm leading-relaxed">
+            Produced strictly in GMP-certified, state-of-the-art facilities following world-class quality and safety controls.
+          </p>
+        </div>
+
+        <!-- Promise 4 -->
+        <div class="p-6 rounded-card bg-white/5 border border-white/10 backdrop-blur-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-white/10 text-terracotta flex items-center justify-center">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">
+            30-Day Taste Love
+          </h4>
+          <p class="text-cream/70 text-xs sm:text-sm leading-relaxed">
+            If you do not genuinely fall in love with the flavor and digestive lightness, our customer care team will make it right.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Trust quote banner -->
+      <div class="mt-12 p-6 rounded-2xl bg-white/10 border border-white/15 text-center max-w-2xl mx-auto">
+        <p class="text-sm sm:text-base italic text-cream">
+          “We believe transparency isn’t a marketing tactic—it’s the fundamental baseline for any food you put into your body.”
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. BUILT FOR YOUR EVERYDAY (Daily Lifestyle Integration) -->
+  <!-- ========================================================================= -->
+  <section id="built-for-everyday" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-sage-700 bg-sage-100 px-3.5 py-1 rounded-full border border-sage-200">
+          Seamless Lifestyle Integration
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-charcoal tracking-tight">
+          Built for Your Everyday
+        </h2>
+        <p class="text-charcoal-body text-base sm:text-lg">
+          No complicated rituals. Here is how MYNUTRITION fits effortlessly into your 24 hours.
+        </p>
+      </div>
+
+      <!-- 4 Everyday Moments Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Routine 1: Breakfast / Morning -->
+        <div class="bg-white rounded-card overflow-hidden border border-charcoal-border shadow-soft hover:shadow-hover transition-all group">
+          <div class="h-44 bg-gradient-to-tr from-amber-100/60 to-beige flex items-center justify-center relative p-4">
+            <div class="w-14 h-14 rounded-2xl bg-white shadow-soft flex items-center justify-center text-sage-600 group-hover:scale-110 transition-transform">
+              <i data-lucide="sunrise" class="w-7 h-7"></i>
+            </div>
+            <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider bg-white/95 px-2.5 py-0.5 rounded-full text-charcoal">
+              08:00 AM
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <h3 class="font-display font-bold text-lg text-charcoal">
+              Breakfast & Smoothies
+            </h3>
+            <p class="text-charcoal-body text-xs sm:text-sm leading-relaxed">
+              Mix with your morning oats, cereal, or blend into a fruit smoothie for sustained energy that keeps you focused until lunch.
+            </p>
+          </div>
+        </div>
+
+        <!-- Routine 2: Post-Workout -->
+        <div class="bg-white rounded-card overflow-hidden border border-charcoal-border shadow-soft hover:shadow-hover transition-all group">
+          <div class="h-44 bg-gradient-to-tr from-sage-200/50 to-sage-50 flex items-center justify-center relative p-4">
+            <div class="w-14 h-14 rounded-2xl bg-white shadow-soft flex items-center justify-center text-sage-600 group-hover:scale-110 transition-transform">
+              <i data-lucide="dumbbell" class="w-7 h-7"></i>
+            </div>
+            <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider bg-white/95 px-2.5 py-0.5 rounded-full text-charcoal">
+              Workout
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <h3 class="font-display font-bold text-lg text-charcoal">
+              After Workouts
+            </h3>
+            <p class="text-charcoal-body text-xs sm:text-sm leading-relaxed">
+              Fast-absorbing amino acids kickstart muscle synthesis and repair without leaving your stomach feeling weighed down.
+            </p>
+          </div>
+        </div>
+
+        <!-- Routine 3: Afternoon Study / Work -->
+        <div class="bg-white rounded-card overflow-hidden border border-charcoal-border shadow-soft hover:shadow-hover transition-all group">
+          <div class="h-44 bg-gradient-to-tr from-beige to-cream-300/40 flex items-center justify-center relative p-4">
+            <div class="w-14 h-14 rounded-2xl bg-white shadow-soft flex items-center justify-center text-terracotta group-hover:scale-110 transition-transform">
+              <i data-lucide="laptop" class="w-7 h-7"></i>
+            </div>
+            <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider bg-white/95 px-2.5 py-0.5 rounded-full text-charcoal">
+              03:30 PM
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <h3 class="font-display font-bold text-lg text-charcoal">
+              Study & Work Hours
+            </h3>
+            <p class="text-charcoal-body text-xs sm:text-sm leading-relaxed">
+              Replace unhealthy sugary café drinks with an iced Coffee [FLAVOUR] shake to satisfy afternoon cravings and sharpen focus.
+            </p>
+          </div>
+        </div>
+
+        <!-- Routine 4: Evening -->
+        <div class="bg-white rounded-card overflow-hidden border border-charcoal-border shadow-soft hover:shadow-hover transition-all group">
+          <div class="h-44 bg-gradient-to-tr from-sage-100 to-cream flex items-center justify-center relative p-4">
+            <div class="w-14 h-14 rounded-2xl bg-white shadow-soft flex items-center justify-center text-sage-600 group-hover:scale-110 transition-transform">
+              <i data-lucide="moon" class="w-7 h-7"></i>
+            </div>
+            <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider bg-white/95 px-2.5 py-0.5 rounded-full text-charcoal">
+              Evening
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <h3 class="font-display font-bold text-lg text-charcoal">
+              Evening Wind-Down
+            </h3>
+            <p class="text-charcoal-body text-xs sm:text-sm leading-relaxed">
+              A light warm or cold dessert-style shake that nourishes muscle tissue overnight without causing nocturnal heartburn or bloat.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- COMMUNITY VOICE CARD -->
+  <!-- ========================================================================= -->
+  <section class="py-16 bg-white border-y border-charcoal-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      
+      <div class="flex justify-center text-amber-500 gap-1">
+        <i data-lucide="star" class="w-5 h-5 fill-amber-500 text-amber-500"></i>
+        <i data-lucide="star" class="w-5 h-5 fill-amber-500 text-amber-500"></i>
+        <i data-lucide="star" class="w-5 h-5 fill-amber-500 text-amber-500"></i>
+        <i data-lucide="star" class="w-5 h-5 fill-amber-500 text-amber-500"></i>
+        <i data-lucide="star" class="w-5 h-5 fill-amber-500 text-amber-500"></i>
+      </div>
+
+      <blockquote class="font-display font-bold text-xl sm:text-2xl text-charcoal max-w-2xl mx-auto leading-snug">
+        “[REAL CUSTOMER REVIEW] MYNUTRITION completely shifted how I view protein. It does not feel like gym medicine anymore—it’s the favorite part of my morning routine.”
+      </blockquote>
+
+      <p class="text-xs sm:text-sm text-charcoal-muted">
+        Verified customer feedback from active community members who made protein part of their daily life.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- FINAL CTA: START YOUR HABIT -->
+  <!-- ========================================================================= -->
+  <section class="py-20 md:py-28 bg-cream relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-sage-600 via-sage-700 to-sage-deep rounded-card-lg p-10 sm:p-14 lg:p-20 text-center text-cream relative shadow-card overflow-hidden">
+        
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-terracotta/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-3xl mx-auto space-y-6 relative z-10">
+          
+          <span class="text-xs font-bold uppercase tracking-widest text-cream/80 bg-white/10 px-4 py-1.5 rounded-full border border-white/10 inline-block">
+            Join the Movement
+          </span>
+
+          <h2 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-white leading-tight">
+            Ready to Build Your Best?
+          </h2>
+
+          <p class="text-cream/85 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+            Experience clean, light, and crave-worthy protein nutrition designed for real everyday life.
+          </p>
+
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="index.html#product" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 font-display font-bold text-sm uppercase tracking-wider px-10 py-4 rounded-full bg-cream text-charcoal hover:bg-white transition-all shadow-card hover:-translate-y-0.5 touch-target">
+              <span>Shop MYNUTRITION Protein</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-terracotta"></i>
+            </a>
+            
+            <a href="index.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-display font-semibold text-sm px-8 py-4 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all border border-white/20 touch-target">
+              <span>Explore Homepage</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 flex flex-wrap items-center justify-center gap-6 text-xs text-cream/70">
+            <span class="flex items-center gap-1.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-300"></i>
+              30-Day Taste Guarantee
+            </span>
+            <span class="flex items-center gap-1.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-300"></i>
+              Free Express Delivery above [PRICE]
+            </span>
+            <span class="flex items-center gap-1.5">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-300"></i>
+              Zero Digestive Bloat
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="bg-charcoal text-cream/70 pt-16 pb-12 border-t border-charcoal-border/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: Brand & Logo (4 cols) -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-sage-600 text-cream flex items-center justify-center font-display font-extrabold text-lg">
+              M
+            </div>
+            <span class="font-display font-extrabold text-2xl tracking-tight text-white">
+              MYNUTRITION<span class="text-terracotta">.</span>
+            </span>
+          </a>
+          <p class="text-xs sm:text-sm text-cream/60 leading-relaxed max-w-sm">
+            Clean, modern everyday protein formulated for Gen Z, beginners, and active lifestyles. Simple nutrition, better choices, stronger you.
+          </p>
+          <div class="pt-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-cream hover:text-terracotta transition-colors bg-white/5 px-3.5 py-2 rounded-full border border-white/10">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+              <span>Follow on Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Products -->
+        <div class="lg:col-span-2 space-y-3 text-xs sm:text-sm">
+          <p class="font-display font-bold text-white uppercase tracking-wider text-xs">Products</p>
+          <ul class="space-y-2">
+            <li><a href="index.html#product" class="hover:text-white transition-colors">MYNUTRITION Premium Protein</a></li>
+            <li><a href="index.html#product" class="hover:text-white transition-colors">Chocolate Flavor</a></li>
+            <li><a href="index.html#product" class="hover:text-white transition-colors">Vanilla Flavor</a></li>
+            <li><a href="index.html#product" class="hover:text-white transition-colors">Coffee Flavor</a></li>
+            <li><a href="index.html#product" class="hover:text-white transition-colors">Starter Shaker Bottle</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: About -->
+        <div class="lg:col-span-2 space-y-3 text-xs sm:text-sm">
+          <p class="font-display font-bold text-white uppercase tracking-wider text-xs">About</p>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-white font-semibold transition-colors">Our Story & Mission</a></li>
+            <li><a href="about.html#why-mynutrition" class="hover:text-white transition-colors">Why MYNUTRITION</a></li>
+            <li><a href="about.html#our-promise" class="hover:text-white transition-colors">Our Promise</a></li>
+            <li><a href="index.html#protein-matters" class="hover:text-white transition-colors">Why Protein Matters</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">[CERTIFICATIONS]</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">[LAB TEST RESULTS]</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: FAQ & Contact -->
+        <div class="lg:col-span-2 space-y-3 text-xs sm:text-sm">
+          <p class="font-display font-bold text-white uppercase tracking-wider text-xs">Help & Contact</p>
+          <ul class="space-y-2">
+            <li><a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact Support</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Shipping & Returns</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Track Order</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Newsletter -->
+        <div class="lg:col-span-2 space-y-3 text-xs sm:text-sm">
+          <p class="font-display font-bold text-white uppercase tracking-wider text-xs">Stay Connected</p>
+          <p class="text-xs text-cream/60">Get 10% off your first order + everyday wellness tips.</p>
+          <form onsubmit="event.preventDefault(); alert('Subscribed to MYNUTRITION community!');" class="space-y-2">
+            <input type="email" required placeholder="Enter your email" class="w-full bg-white/5 border border-white/15 rounded-lg px-3 py-2 text-xs text-white placeholder-white/40 focus:outline-none focus:border-sage-500">
+            <button type="submit" class="w-full font-display font-bold text-xs uppercase tracking-wider py-2 rounded-lg bg-sage-600 text-white hover:bg-sage-700 transition-colors">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Row -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-cream/50">
+        <div class="flex flex-wrap items-center gap-4">
+          <span>&copy; 2026 MYNUTRITION. All rights reserved.</span>
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms & Conditions</a>
+        </div>
+        <div class="flex items-center space-x-2 text-[11px] text-cream/40">
+          <span>Clean Nutrition</span>
+          <span>•</span>
+          <span>Gen Z Wellness</span>
+          <span>•</span>
+          <span>Quality Guaranteed</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- SLIDE-OVER CART DRAWER -->
+  <!-- ========================================================================= -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden pointer-events-none transition-opacity duration-300 opacity-0" aria-labelledby="cart-title" role="dialog" aria-modal="true">
+    <div id="cart-backdrop" class="fixed inset-0 bg-charcoal/60 backdrop-blur-sm transition-opacity"></div>
+
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div id="cart-panel" class="w-screen max-w-md bg-white shadow-drawer pointer-events-auto transform translate-x-full transition-transform duration-300 flex flex-col">
+        
+        <!-- Header -->
+        <div class="p-6 border-b border-charcoal-border flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <i data-lucide="shopping-bag" class="w-5 h-5 text-sage-600"></i>
+            <h2 id="cart-title" class="font-display font-extrabold text-xl text-charcoal">
+              Your Bag (<span id="cart-item-count-text">0</span>)
+            </h2>
+          </div>
+          <button id="cart-close-btn" type="button" aria-label="Close cart" class="p-2 rounded-full text-charcoal-muted hover:text-charcoal hover:bg-cream transition-colors touch-target flex items-center justify-center">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- Free Shipping Progress -->
+        <div class="bg-sage-50 px-6 py-3 border-b border-charcoal-border text-xs">
+          <div class="flex justify-between items-center mb-1.5">
+            <span class="font-medium text-charcoal">Free Express Delivery</span>
+            <span class="font-bold text-sage-700">Unlocked!</span>
+          </div>
+          <div class="w-full h-1.5 bg-sage-200 rounded-full overflow-hidden">
+            <div class="h-full bg-sage-600 w-full rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- Cart Items List -->
+        <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4">
+          <div id="cart-empty-state" class="text-center py-16 space-y-3">
+            <div class="w-16 h-16 rounded-full bg-cream text-charcoal-muted flex items-center justify-center mx-auto">
+              <i data-lucide="shopping-bag" class="w-8 h-8"></i>
+            </div>
+            <p class="font-display font-bold text-lg text-charcoal">Your bag is empty</p>
+            <p class="text-xs text-charcoal-muted">Choose your favorite flavor of MYNUTRITION Premium Protein to begin.</p>
+            <a href="index.html#product" class="inline-flex items-center justify-center font-display font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-full bg-sage-600 text-white mt-2">
+              Shop Protein
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="cart-footer" class="p-6 border-t border-charcoal-border bg-cream space-y-4">
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between text-charcoal-body">
+              <span>Subtotal:</span>
+              <span id="cart-subtotal" class="font-semibold text-charcoal">[PRICE]</span>
+            </div>
+            <div class="flex justify-between text-charcoal-body">
+              <span>Delivery:</span>
+              <span class="text-sage-700 font-semibold">FREE</span>
+            </div>
+            <div class="flex justify-between text-base font-bold text-charcoal pt-2 border-t border-charcoal-border">
+              <span>Total:</span>
+              <span id="cart-total" class="font-display font-extrabold text-xl text-sage-700">[PRICE]</span>
+            </div>
+          </div>
+
+          <button type="button" onclick="alert('Proceeding to checkout! Placeholder order created.');" class="w-full inline-flex items-center justify-center gap-2 font-display font-bold text-sm uppercase tracking-wider py-4 rounded-full bg-sage-600 text-white hover:bg-sage-700 transition-colors shadow-soft touch-target">
+            <i data-lucide="lock" class="w-4 h-4"></i>
+            <span>PROCEED TO CHECKOUT • [PRICE]</span>
+          </button>
+          
+          <p class="text-center text-[11px] text-charcoal-muted flex items-center justify-center gap-1">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-sage-600"></i>
+            <span>Safe & Encrypted 256-Bit Checkout</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT INTERACTIONS -->
+  <!-- ========================================================================= -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Cart Elements
+    const cartDrawer = document.getElementById('cart-drawer');
+    const cartBackdrop = document.getElementById('cart-backdrop');
+    const cartPanel = document.getElementById('cart-panel');
+    const cartCloseBtn = document.getElementById('cart-close-btn');
+    const cartDrawerTrigger = document.getElementById('cart-drawer-trigger');
+
+    function openCart() {
+      cartDrawer.classList.remove('opacity-0', 'pointer-events-none');
+      cartPanel.classList.remove('translate-x-full');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeCart() {
+      cartPanel.classList.add('translate-x-full');
+      cartDrawer.classList.add('opacity-0', 'pointer-events-none');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    cartDrawerTrigger.addEventListener('click', openCart);
+    cartCloseBtn.addEventListener('click', closeCart);
+    cartBackdrop.addEventListener('click', closeCart);
+
+    // Mobile Hamburger Toggle
+    const mobileMenuTrigger = document.getElementById('mobile-menu-trigger');
+    const mobileNavPanel = document.getElementById('mobile-nav-panel');
+    const menuIconOpen = document.getElementById('menu-icon-open');
+    const menuIconClose = document.getElementById('menu-icon-close');
+
+    mobileMenuTrigger.addEventListener('click', () => {
+      const isOpen = !mobileNavPanel.classList.contains('hidden');
+      if (isOpen) {
+        mobileNavPanel.classList.add('hidden');
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
+      } else {
+        mobileNavPanel.classList.remove('hidden');
+        menuIconOpen.classList.add('hidden');
+        menuIconClose.classList.remove('hidden');
+      }
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNavPanel.classList.add('hidden');
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
